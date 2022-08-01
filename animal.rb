@@ -1,0 +1,16 @@
+# require './remover.rb'
+
+class Animal
+  attr_reader :id
+  attr_accessor :name
+  def initialize(type, number_of_legs, name="unknown")
+    @id = Random.rand(1..1000)
+    @name = name
+    @number_of_legs = number_of_legs
+    @type = type
+  end
+
+  def speak
+   "grrrr"
+  end
+end
